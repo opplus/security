@@ -1,0 +1,136 @@
+
+
+/* line 77, ../compass/sass/style.scss */
+ul.transitions {
+    margin-right: -30;
+    padding: 0;
+    overflow: auto;
+    float: right;
+    margin-top: -200;
+}
+/* line 83, ../compass/sass/style.scss */
+ul.transitions li.tupian {
+  list-style: none;
+  width: 20%;
+  float: left;
+  padding: 0 10px 1em;
+}
+/* line 90, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian {
+  font-family: 'Antic Slab', arial, sans-serif;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 3px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 3px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 3px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #999999), color-stop(100%, #666666));
+  background: -webkit-linear-gradient(#999999, #666666);
+  background: -moz-linear-gradient(#999999, #666666);
+  background: -o-linear-gradient(#999999, #666666);
+  background: -ms-linear-gradient(#999999, #666666);
+  background: linear-gradient(#999999, #666666);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+}
+/* line 106, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="explode"] {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #793c82), color-stop(100%, #592c5f));
+  background: -webkit-linear-gradient(#793c82, #592c5f);
+  background: -moz-linear-gradient(#793c82, #592c5f);
+  background: -o-linear-gradient(#793c82, #592c5f);
+  background: -ms-linear-gradient(#793c82, #592c5f);
+  background: linear-gradient(#793c82, #592c5f);
+}
+/* line 111, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="explode"]:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #592c5f), color-stop(100%, #381c3c));
+  background: -webkit-linear-gradient(#592c5f, #381c3c);
+  background: -moz-linear-gradient(#592c5f, #381c3c);
+  background: -o-linear-gradient(#592c5f, #381c3c);
+  background: -ms-linear-gradient(#592c5f, #381c3c);
+  background: linear-gradient(#592c5f, #381c3c);
+}
+/* line 117, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="cube"] {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2ad6dd), color-stop(100%, #1db1b7));
+  background: -webkit-linear-gradient(#2ad6dd, #1db1b7);
+  background: -moz-linear-gradient(#2ad6dd, #1db1b7);
+  background: -o-linear-gradient(#2ad6dd, #1db1b7);
+  background: -ms-linear-gradient(#2ad6dd, #1db1b7);
+  background: linear-gradient(#2ad6dd, #1db1b7);
+}
+/* line 122, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="cube"]:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1db1b7), color-stop(100%, #16868b));
+  background: -webkit-linear-gradient(#1db1b7, #16868b);
+  background: -moz-linear-gradient(#1db1b7, #16868b);
+  background: -o-linear-gradient(#1db1b7, #16868b);
+  background: -ms-linear-gradient(#1db1b7, #16868b);
+  background: linear-gradient(#1db1b7, #16868b);
+}
+/* line 128, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="turn"] {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fa602a), color-stop(100%, #eb4106));
+  background: -webkit-linear-gradient(#fa602a, #eb4106);
+  background: -moz-linear-gradient(#fa602a, #eb4106);
+  background: -o-linear-gradient(#fa602a, #eb4106);
+  background: -ms-linear-gradient(#fa602a, #eb4106);
+  background: linear-gradient(#fa602a, #eb4106);
+}
+/* line 133, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="turn"]:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eb4106), color-stop(100%, #ba3304));
+  background: -webkit-linear-gradient(#eb4106, #ba3304);
+  background: -moz-linear-gradient(#eb4106, #ba3304);
+  background: -o-linear-gradient(#eb4106, #ba3304);
+  background: -ms-linear-gradient(#eb4106, #ba3304);
+  background: linear-gradient(#eb4106, #ba3304);
+}
+/* line 139, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="tiles3d"] {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb1628), color-stop(100%, #da0415));
+  background: -webkit-linear-gradient(#fb1628, #da0415);
+  background: -moz-linear-gradient(#fb1628, #da0415);
+  background: -o-linear-gradient(#fb1628, #da0415);
+  background: -ms-linear-gradient(#fb1628, #da0415);
+  background: linear-gradient(#fb1628, #da0415);
+}
+/* line 144, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="tiles3d"]:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #da0415), color-stop(100%, #a80310));
+  background: -webkit-linear-gradient(#da0415, #a80310);
+  background: -moz-linear-gradient(#da0415, #a80310);
+  background: -o-linear-gradient(#da0415, #a80310);
+  background: -ms-linear-gradient(#da0415, #a80310);
+  background: linear-gradient(#da0415, #a80310);
+}
+/* line 150, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="bars3d"] {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82d444), color-stop(100%, #69ba2b));
+  background: -webkit-linear-gradient(#82d444, #69ba2b);
+  background: -moz-linear-gradient(#82d444, #69ba2b);
+  background: -o-linear-gradient(#82d444, #69ba2b);
+  background: -ms-linear-gradient(#82d444, #69ba2b);
+  background: linear-gradient(#82d444, #69ba2b);
+}
+/* line 155, ../compass/sass/style.scss */
+ul.transitions li.tupian button.tupian[data-transition="bars3d"]:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #69ba2b), color-stop(100%, #519121));
+  background: -webkit-linear-gradient(#69ba2b, #519121);
+  background: -moz-linear-gradient(#69ba2b, #519121);
+  background: -o-linear-gradient(#69ba2b, #519121);
+  background: -ms-linear-gradient(#69ba2b, #519121);
+  background: linear-gradient(#69ba2b, #519121);
+}
+

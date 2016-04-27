@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/cache
+       http://www.springframework.org/schema/cache/spring-cache.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd"
+       default-lazy-init="false">
+    <!-- 静态资源(js、image等)的访问 -->
+    <mvc:default-servlet-handler/>
+    <!-- 开启注解 -->
+    <mvc:annotation-driven/>
+    <!-- 启用spring mvc 注解 -->
+    <context:annotation-config/>
+    <!-- 设置使用注解的类所在的jar包 -->
+    <context:component-scan base-package="com/"/>
+    <!-- task任务扫描注解 -->
+    <task:annotation-driven/>
+    <context:component-scan base-package="com.service.impl"></context:component-scan>
+    <!-- configure the InternalResourceViewResolver -->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
+    <!--<bean id="user" class="com.model.User" />-->
+    <!--<bean id="userDAO" class="com.dao.impl.UserDAOImpl" />-->
+    <!--<bean id="userService" class="com.service.UserService">-->
+    <!--<property name="userDAO" bean="userDAO" />-->
+    <!--</bean>-->
+    <!--媒体主登录验证拦截器-->
+    <!--<mvc:interceptors>-->
+    <!--<mvc:interceptor>-->
+    <!--<mvc:mapping path="/user/**"/>-->
+    <!--<mvc:exclude-mapping path="/user/tologin"/>-->
+    <!--<mvc:exclude-mapping path="/user/outlogin"/>-->
+    <!--<mvc:exclude-mapping path="/user/login"/>-->
+    <!--<bean id="userloginInterceptor" class="com.interceptor.UserLoginInterceptor"/>-->
+    <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <!--媒体主注册拦截器-->
+    <!--<mvc:interceptors>-->
+    <!--<mvc:interceptor>-->
+    <!--<mvc:mapping path="/register/**"/>-->
+    <!--<mvc:exclude-mapping path="/register/toregister"/>-->
+    <!--<mvc:exclude-mapping path="/register/checkEmail"/>-->
+    <!--<mvc:exclude-mapping path="/register/checkPassword"/>-->
+    <!--<mvc:exclude-mapping path="/register/checkCode"/>-->
+    <!--<mvc:exclude-mapping path="/register/register/code"/>-->
+    <!--<mvc:exclude-mapping path="/register/checkMailcode"/>-->
+    <!--<mvc:exclude-mapping path="/register//checkRegister"/>-->
+    <!--<bean id="RegisterInterceptor" class="com.interceptor.RegisterInterceptor"/>-->
+    <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <!--管理员拦截器-->
+    <!--<mvc:interceptors>-->
+    <!--<mvc:interceptor>-->
+    <!--<mvc:mapping path="/admins/**"/>-->
+    <!--<mvc:mapping path="/news/**"/>-->
+    <!--<mvc:exclude-mapping path="/news/catnews"/>-->
+    <!--<mvc:exclude-mapping path="/news/cattools"/>-->
+    <!--<mvc:exclude-mapping path="/news/newsimage/**"/>-->
+    <!--<mvc:exclude-mapping path="/admins/admintologin"/>-->
+    <!--<mvc:exclude-mapping path="/admins//adminlogin"/>-->
+    <!--<mvc:exclude-mapping path="/admins//adminout"/>-->
+    <!--<bean id="adminloginInterceptor" class="com.interceptor.AdminLoginInterceptor"/>-->
+    <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+</beans>
